@@ -1,4 +1,4 @@
-import Projects from "./Projects";
+//import Projects from "./Projects";
 
 export function About() {
     const name: string = "Christian A. Perez";
