@@ -1,11 +1,44 @@
+import { useRef, useEffect } from 'react';
+
 export function Nav() {
+    const Artisanal_Software: string = "ARTISANAL SOFTWARE";
+    const bannerText = useRef<HTMLDivElement | null>(null);
+    const descriptions: string[] = ['GMO Free', 'Gluten Free', 'MSG Free', 'Vegan Approved', 'Ethically Sourced',
+        'Dairy Free', 'Cholesterol Free', 'Antioxidant Packed', 'Preservative Free', 'Nut Free', 'Soy Free', 'Zero Waste', 'Nitrate Free',
+        'Peanut Free', 'BPA Free', 'Homebrewed', 'Toxin Free', 'Pesticide Free', 'Unleaded', 'Sulfite Free', 'Water Resistant',
+        'Vitamin Infused', 'Omega-3 Loaded', 'Bee Friendly', 'Allergen Free', 'Carcinogen Free', 'Boldly Spiced', 'Glyphosate Free',
+        'Fire-Roasted', 'Hand Carved', 'Cold Brewed', 'Forged In Fire', 'Fully Distilled', 'Oven-Baked', 'Sun Dried'];
+
+    const len: number = descriptions.length;
+    let currentIndex: number = Math.floor(Math.random() * len);
+
+    useEffect(() => {
+        setTimeout(() => {
+            const banner = bannerText.current;
+            banner!.textContent = descriptions[currentIndex];
+            setInterval(() => {
+                currentIndex = Math.floor(Math.random() * len);
+                banner!.textContent = descriptions[currentIndex];
+
+            }, 2500);
+        }, 3000);
+    });
+
     return (
         <nav className="dark:bg-gray-900">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="AS.png" width="50" height="50" className=""></img>
-                    <span className="self-center text-xl font-serif font-semibold whitespace-nowrap">ARTISANAL SOFTWARE</span>
                 </a>
+
+                <div className="flex-1">
+                    <p ref={bannerText}>Beautiful, Hand Crafted</p>
+                    <div className="h-8 justify-between">
+                        <div className="flex-1 md:flex md:items-center md:gap-12">
+                            <h2 className="text-xl font-serif font-semibold whitespace-nowrap">{Artisanal_Software}</h2>
+                        </div>
+                    </div>
+                </div>
 
                 <div className="hidden w-full md:block md:w-auto text-l" id="navbar-solid-bg">
                     <ul className="flex flex-col mt-4 font-serif font-semibold rounded-lg bg-gray-50 md:space-x-15 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">

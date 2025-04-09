@@ -6,8 +6,8 @@ export function Hero() {
 
     return (
         <>
-            <section className="bg-white dark:bg-gray-900">
-                <div className="font-serif py-10 px-4 md:px-8 shadow-md shadow-xl/10 rounded-lg lg:h-screen lg:place-content-center">
+            <section className="bg-white dark:bg-gray-900 py-10 px-4 md:px-8 shadow-md rounded-lg lg:h-screen flex items-center justify-center">
+                <div className="font-serif text-left">
                     <h1 className="mb-2 text-3xl font-extrabold tracking-tight leading-none text-gray-400 md:text-4xl lg:text-5xl dark:text-gray-400">{name}</h1>
 
                     <div className="flex items-center gap-2 mb-5">
