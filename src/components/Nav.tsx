@@ -1,8 +1,9 @@
 import { useRef, useEffect } from 'react';
 
 export function Nav() {
+    const bannerText:React.RefObject<HTMLDivElement | null> = useRef<HTMLDivElement | null>(null);
     const Artisanal_Software: string = "ARTISANAL SOFTWARE";
-    const bannerText = useRef<HTMLDivElement | null>(null);
+    
     const descriptions: string[] = ['GMO Free', 'Gluten Free', 'MSG Free', 'Vegan Approved', 'Ethically Sourced',
         'Dairy Free', 'Cholesterol Free', 'Antioxidant Packed', 'Preservative Free', 'Nut Free', 'Soy Free', 'Zero Waste', 'Nitrate Free',
         'Peanut Free', 'BPA Free', 'Homebrewed', 'Toxin Free', 'Pesticide Free', 'Unleaded', 'Sulfite Free', 'Water Resistant',

@@ -1,8 +1,8 @@
-export function Projects () {
+export function Projects() {
     return (
-        <div className="text-center text-white">
-            
-        </div>
+        <section id="Projects" className="text-gray-500">
+            <h1>P</h1>
+        </section>
     )
 }
 
