@@ -8,7 +8,7 @@ export function Nav() {
         'Dairy Free', 'Cholesterol Free', 'Antioxidant Packed', 'Preservative Free', 'Nut Free', 'Soy Free', 'Zero Waste', 'Nitrate Free',
         'Peanut Free', 'BPA Free', 'Homebrewed', 'Toxin Free', 'Pesticide Free', 'Unleaded', 'Sulfite Free', 'Water Resistant',
         'Vitamin Infused', 'Omega-3 Loaded', 'Bee Friendly', 'Allergen Free', 'Carcinogen Free', 'Boldly Spiced', 'Glyphosate Free',
-        'Fire-Roasted', 'Hand Carved', 'Cold Brewed', 'Forged In Fire', 'Fully Distilled', 'Oven-Baked', 'Sun Dried'];
+        'Fire-Roasted', 'Hand Carved', 'Cold Brewed', 'Forged In Fire', 'Fully Distilled', 'Oven-Baked', 'Sun Dried', 'Beautiful, Hand Crafted'];
 
     const len: number = descriptions.length;
     let currentIndex: number = Math.floor(Math.random() * len);
@@ -21,8 +21,8 @@ export function Nav() {
                 currentIndex = Math.floor(Math.random() * len);
                 banner!.textContent = descriptions[currentIndex];
 
-            }, 2500);
-        }, 3000);
+            }, 2000);
+        }, 2000);
     });
 
     return (
