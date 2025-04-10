@@ -8,13 +8,13 @@ export function About() {
 
     return (
         <>
-            <section className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3 mb-85">
+            <section id="About" className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3 mb-90">
                 <div className="font-serif text-left lg:mt-130 w-full">
                     <h1 className=" mb-2 text-xl font-extrabold tracking-tight leading-none text-gray-400 md:text-3xl lg:text-4xl dark:text-gray-400">{name}</h1>
 
                     <div className="flex items-center gap-2 mb-5">
                         <h2 className="text-l font-extrabold tracking-tight leading-none text-gray-900 md:text-xl lg:text-2xl"><strong
-                            className="text-indigo-600">{role}</strong></h2>
+                            className="text-cyan-700">{role}</strong></h2>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" className="w-5 h-5 text-gray-700 dark:text-gray-300 dark:stroke-gray-300">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -41,7 +41,7 @@ export function About() {
                                 <a target="_blank" rel="noopener noreferrer" href="https://github.com/0x008080" className="mr-5 mb-5 lg:mb-0">
                                     <svg className="logo-3" xmlns="http://www.w3.org/2000/svg" viewBox="-1.565 -1.565 50 50" fill="none" stroke="#99a1af" stroke-linecap="round" stroke-linejoin="round" id="Github--Streamline-Feather" height="50" width="50"><desc>Github Streamline Icon: https://streamlinehq.com</desc><path d="M17.57625 37.10541666666667c-9.764583333333334 2.9293750000000003 -9.764583333333334 -4.882291666666667 -13.670416666666668 -5.858750000000001m27.340833333333336 11.717500000000001v-7.557787500000001a6.581329166666667 6.581329166666667 0 0 0 -1.8357416666666668 -5.097112500000001c6.132158333333334 -0.6835208333333334 12.576783333333335 -3.007491666666667 12.576783333333335 -13.670416666666668A10.623866666666668 10.623866666666668 0 0 0 39.05833333333334 9.3154125 9.901287500000002 9.901287500000002 0 0 0 38.88257083333334 1.9529166666666669S36.57812916666667 1.2693958333333335 31.24666666666667 4.843233333333334a26.130025000000003 26.130025000000003 0 0 0 -13.670416666666668 0C12.244787500000001 1.2693958333333335 9.940345833333334 1.9529166666666669 9.940345833333334 1.9529166666666669A9.901287500000002 9.901287500000002 0 0 0 9.764583333333334 9.3154125a10.623866666666668 10.623866666666668 0 0 0 -2.9293750000000003 7.3820250000000005c0 10.584808333333335 6.444625 12.908779166666669 12.576783333333335 13.670416666666668A6.581329166666667 6.581329166666667 0 0 0 17.57625 35.40637916666667V42.96416666666667" stroke-width="2"></path></svg>
                                 </a>
-                                <a href="#Projects" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-500 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-800 dark:focus:ring-gray-800">
+                                <a href="#Projects" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium rounded-lg border border-gray-300 focus:ring-4 focus:ring-gray-100 dark:text-gray-300 dark:border-gray-400 logo-3 dark:focus:ring-gray-800">
                                     Learn More
                                 </a>
                             </div>

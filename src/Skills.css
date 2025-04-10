@@ -4,27 +4,27 @@
 }
 
 .logo:hover {
-    filter: drop-shadow(0 0 2.5em #646cffaa);
+    filter: drop-shadow(0 0 1em #00faff);
 }
 
 .logo.react:hover {
-    filter: drop-shadow(0 0 2.5em #61dafbaa);
+    filter: drop-shadow(0 0 1em #00faff) ;
 }
 
 .logo-2:hover {
-    filter: drop-shadow(0 0 2.5em #646cffaa);
+    filter: drop-shadow(0 0 1em #00faff);
 }
 
 .logo-2.react:hover {
-    filter: drop-shadow(0 0 5em #61dafbaa);
+    filter: drop-shadow(0 0 1em #00faff);
 }
 
 .logo-3:hover {
-    filter: drop-shadow(0 0 5em #f6f6f6aa);
+    filter: drop-shadow(0 0 1em #00faff);
 }
 
 .logo-3.react:hover {
-    filter: drop-shadow(0 0 5em #61dafbaa);
+    filter: drop-shadow(0 0 1em #00faff);
 }
 
 @keyframes logo-spin {
@@ -39,6 +39,6 @@
 
 @media (prefers-reduced-motion: no-preference) {
     .logo {
-        animation: logo-spin infinite 20s linear;
+        animation: logo-spin infinite 12s linear;
     }
 }

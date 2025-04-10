@@ -7,8 +7,7 @@ export function Skills() {
         <>
             <section id="Skills" className="font-serif flex w-full justify-end">
                 <div className="md:max-w-screen-md lg:max-w-screen-lg justify-end">
-                
-                    <span className="hidden lg:block p-10 rounded-lg shadow-xl/20 dark:bg-gray-900 dark:border-gray-100">
+                    <span className="hidden lg:block p-10 rounded-lg shadow-xl/20 shadow-cyan-700/80 dark:border-gray-100">
                         
                         <div className="flex flex-col lg:flex-row lg:gap-7 mb-5 place-content-end">
                             <img src="postgres.png" className="logo-2 mt-1 mb-1"></img>
