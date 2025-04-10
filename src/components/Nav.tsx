@@ -26,7 +26,7 @@ export function Nav() {
     });
 
     return (
-        <nav className="dark:bg-gray-900">
+        <nav className="dark:bg-gray-900 mb-20">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <img src="AS.png" width="50" height="50" className=""></img>
