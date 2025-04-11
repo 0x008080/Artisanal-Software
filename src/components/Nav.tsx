@@ -11,8 +11,10 @@ export function Nav() {
 
     const len: number = descriptions.length;
     let currentIndex: number = Math.floor(Math.random() * len);
-
+    
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     useEffect(() => {
+
         setTimeout(() => {
             const banner = bannerText.current;
             banner!.textContent = descriptions[currentIndex];
@@ -23,8 +25,6 @@ export function Nav() {
             }, 2750);
         }, 2750);
     });
-
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
 
