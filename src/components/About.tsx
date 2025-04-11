@@ -9,7 +9,7 @@ export function About() {
     return (
         <>
             <section id="About" className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3 mb-90">
-                <div className="text-left lg:mt-130 w-full">
+                <div className="text-left lg:mt-75 w-full">
                     <h1 className=" mb-2 text-xl font-extrabold tracking-tight leading-none text-gray-400 md:text-3xl lg:text-4xl dark:text-gray-400">{name}</h1>
                     
                     <div className="flex items-center gap-2 mb-5">

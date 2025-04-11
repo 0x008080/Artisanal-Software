@@ -25,6 +25,13 @@ export function Projects() {
                                     <path d="m9 18 6-6-6-6"></path>
                                 </svg>
                             </a>
+
+                            <a className="mt-10 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-white decoration-2 hover:scale-105 logo-2" target="_blank" href="https://0x008080.github.io/TCG-Search">
+                                Try Out
+                                <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </a>
                         </div>
                     </div>
 

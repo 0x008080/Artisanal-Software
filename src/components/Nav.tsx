@@ -28,13 +28,13 @@ export function Nav() {
     });
 
     return (
-        <nav className="sticky top-0 z-50 mb-15">
+        <nav className="sticky top-0 z-50 mb-5">
             <div className="mx-auto p-4">
                 <div className="flex items-center justify-between">
                     {/* Logo/Left Side */}
                     <div className="flex items-center">
                         <a href="#home" className="flex items-center">
-                            <img src="AS.png" className="h-20 w-20" />
+                            <img src="AS.png" className="h-20 w-20 logo-2" />
                         </a>
                         <div className="ml-4 md:block">
                             <p className="text-lg" ref={bannerText}>Beautiful, Hand Crafted</p>

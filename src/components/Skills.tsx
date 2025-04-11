@@ -31,7 +31,7 @@ export function Skills() {
                             <img src="vite.svg" className="logo-2 mt-1 mb-1" height="50" width="50"></img>
                             <img src="unreal.png" className="logo-2 mt-1 mb-1"></img>
                         </div>
-                        <h1 className="text-right text-lg font-extrabold tracking-tight leading-none text-gray-400 md:text-xl lg:text-xl dark:text-gray-400">{section}</h1>
+                        <h1 className="text-right text-md font-extrabold tracking-tight leading-none text-gray-400 md:text-md lg:text-md dark:text-gray-400">{section}</h1>
                     </span>
                 </div>
             </section>
