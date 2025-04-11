@@ -3,7 +3,7 @@ export function Projects() {
         <section id="Projects" className="max-w-screen-xl flex flex-wrap justify-between mx-auto p-5 font-serif mb-50">
             <div className="">
                 <h1 className="text-lg text-right font-extrabold tracking-tight leading-none text-gray-400 md:text-1xl lg:text-xl dark:text-gray-400 mb-10"></h1>
-                <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-20 gap-y-10">
 
                     {/* Proj 1*/}
                     <div className="flex lg:flex-col rounded-xl  dark:border-gray-100 mr-10 ml-10 ">
