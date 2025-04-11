@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
+
 export function Nav() {
     const bannerText: React.RefObject<HTMLDivElement | null> = useRef<HTMLDivElement | null>(null);
     const Artisanal_Software: string = "ARTISANAL SOFTWARE";
@@ -11,7 +12,7 @@ export function Nav() {
 
     const len: number = descriptions.length;
     let currentIndex: number = Math.floor(Math.random() * len);
-    
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     useEffect(() => {
 
@@ -27,13 +28,12 @@ export function Nav() {
     });
 
     return (
-
-        <nav className="sticky top-0 z-50 mb-20">
+        <nav className="sticky top-0 z-50 mb-15">
             <div className="mx-auto p-4">
                 <div className="flex items-center justify-between">
                     {/* Logo/Left Side */}
                     <div className="flex items-center">
-                        <a href="#About" className="flex items-center">
+                        <a href="#home" className="flex items-center">
                             <img src="AS.png" className="h-20 w-20" />
                         </a>
                         <div className="ml-4 md:block">
@@ -44,7 +44,6 @@ export function Nav() {
                         </div>
                     </div>
 
-            
                     <button
                         type="button"
                         className="md:hidden p-2 text-gray-500 hover:text-gray-700"

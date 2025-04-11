@@ -9,6 +9,7 @@ import Education from './components/Education';
 function App() {
   return (
     <>
+    <section id="home"></section>
       <Nav/>
       <About/>
       <Projects/>

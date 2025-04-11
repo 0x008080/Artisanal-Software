@@ -127,25 +127,23 @@ export function Projects() {
                             </p>
 
                             <p className="mt-2 text-gray-500 dark:text-neutral-300">
-
                             </p>
 
+                            <a className="mt-5 mr-10 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-white decoration-2 hover:scale-105 logo-2" target="_blank" href="https://github.com/0x008080">
+                                GitHub Account
+                            </a>
+                            <a className="mt-1 mr-10 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-white decoration-2 hover:scale-105 logo-2" target="_blank" href="https://github.com/daskrys">
+                                GitHub Archive I
+                            </a>
+                            <a className="mt-1 mr-10 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-white decoration-2 hover:scale-105 logo-2" target="_blank" href="https://github.com/">
+                                GitHub Archive II
+                            </a>
 
+                            <a className="mt-5 mr-10 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-white decoration-2 hover:scale-105 logo-2" target="_blank" href="https://youtube.com/">
+                                Unreal Engine 5 Cinematics
+                            </a>
                         </div>
 
-                        <a className="mt-1 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-white decoration-2 hover:scale-105 logo-2" target="_blank" href="https://github.com/0x008080">
-                            GitHub Account
-                        </a>
-                        <a className="mt-1 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-white decoration-2 hover:scale-105 logo-2" target="_blank" href="https://github.com/daskrys">
-                            GitHub Archive I
-                        </a>
-                        <a className="mt-1 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-white decoration-2 hover:scale-105 logo-2" target="_blank" href="https://github.com/">
-                            GitHub Archive II
-                        </a>
-                        
-                        <a className="mt-5 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-white decoration-2 hover:scale-105 logo-2" target="_blank" href="https://youtube.com/">
-                            Unreal Engine 5 Cinematics
-                        </a>
 
                     </div>
 
