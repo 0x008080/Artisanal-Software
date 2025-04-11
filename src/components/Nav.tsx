@@ -1,5 +1,4 @@
-import { useRef, useEffect } from 'react';
-
+import { useRef, useEffect, useState } from 'react';
 export function Nav() {
     const bannerText: React.RefObject<HTMLDivElement | null> = useRef<HTMLDivElement | null>(null);
     const Artisanal_Software: string = "ARTISANAL SOFTWARE";
@@ -25,44 +24,66 @@ export function Nav() {
         }, 2750);
     });
 
-    return (
-        <nav className="sticky top-0 z-50 mb-20 w-full">
-            <div className="w-full mx-auto max-w-screen-xl p-4">
-                <div className="flex items-center justify-between w-full lg:mx-0">
-                    <a href="#About" className="space-x-3 rtl:space-x-reverse">
-                        <img src="AS.png" width="50" height="50" className=""></img>
-                    </a>
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-                    <div className="flex-1">
-                        <p ref={bannerText}>Beautiful, Hand Crafted</p>
-                        <div className="h-8">
-                            <div className="flex-1 md:flex md:items-right md:gap-12">
-                                <h2 className="text-xl font-serif font-semibold whitespace-nowrap">{Artisanal_Software}</h2>
+    return (
+
+        <nav className="sticky top-0 z-50 mb-20">
+            <div className="mx-auto p-4">
+                <div className="flex items-center justify-between">
+                    {/* Logo/Left Side */}
+                    <div className="flex items-center">
+                        <a href="#About" className="flex items-center">
+                            <img src="AS.png" className="h-20 w-20" />
+                        </a>
+                        <div className="ml-4 md:block">
+                            <p className="text-lg" ref={bannerText}>Beautiful, Hand Crafted</p>
+                            <div className="h-8">
+                                <h2 className="text-xl font-serif font-semibold">{Artisanal_Software}</h2>
                             </div>
                         </div>
                     </div>
 
-                    <div className="flex flex-row-reverse space-x-4 space-x-reverse" id="navbar-solid-bg">
-                    <ul className="flex flex-col font-serif font-semibold rounded-lg bg-gray-50 md:space-x-15 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-                        <li>
-                            <a href="#About" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-600 dark:text-gray-400 md:dark:hover:text-slate-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">About</a>
-                        </li>
-                        {/* <li>
-                            <a href="#Skills" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-600 dark:text-gray-400 md:dark:hover:text-slate-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</a>
-                        </li> */}
-                        <li>
-                            <a href="#Projects" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-600 dark:text-gray-400 md:dark:hover:text-slate-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#Education" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-600 dark:text-gray-400 md:dark:hover:text-slate-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Education</a>
-                        </li>
-                        <li>
-                            <a href="mailto:caperezl@ucsc.edu" className="block py-2 px-3 md:p-0 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-slate-600 dark:text-gray-400 md:dark:hover:text-slate-600 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                </div>
+            
+                    <button
+                        type="button"
+                        className="md:hidden p-2 text-gray-500 hover:text-gray-700"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                    >
+                        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            {isMenuOpen ? (
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                            ) : (
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                            )}
+                        </svg>
+                    </button>
 
+                    <div className={`${isMenuOpen ? 'block' : 'hidden'} md:block`}>
+                        <ul className="text-l flex flex-col font-serif font-semibold md:flex-row md:space-x-8">
+                            <li>
+                                <a href="#About" className="block py-2 px-3 md:p-0 text-gray-900 hover:text-slate-600 dark:text-gray-400 logo-2">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Projects" className="block py-2 px-3 md:p-0 text-gray-900 hover:text-slate-600 dark:text-gray-400 logo-2">
+                                    Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Education" className="block py-2 px-3 md:p-0 text-gray-900 hover:text-slate-600 dark:text-gray-400 logo-2">
+                                    Education
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:caperezl@ucsc.edu" className="block py-2 px-3 md:p-0 text-gray-900 hover:text-slate-600 dark:text-gray-400 logo-2">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
     )
