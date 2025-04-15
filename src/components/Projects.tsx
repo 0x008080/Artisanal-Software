@@ -70,7 +70,7 @@ export function Projects() {
                             </p>
 
                             <p className="mt-2 text-gray-500 dark:text-neutral-300">
-                                Multiplayer prototype with full client-server functionality. Once connected, players are able to move around in a shared room made possible by syncronizing the server state to connected clients using web sockets.
+                                Multiplayer prototype with full client-server functionality. Once connected, players are able to move around in a shared room made possible by syncronizing the server state to connected clients using web sockets
                             </p>
                             <a className="mt-10 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-white decoration-2 hover:scale-105 logo-2" target="_blank" href="https://github.com/daskrys/Socket-Prototype">
                                 Github Repository
@@ -85,16 +85,30 @@ export function Projects() {
                     <div className="flex lg:flex-col rounded-xl  dark:border-gray-100 mr-10 ml-10 ">
                         <div>
                             <h3 className="text-lg font-bold text-gray-300 text-center">
-                                TCG V-Search
+                                Slug Crossing
                             </h3>
-                            <img src="tcg.png" className="mt-5 mb-5 w-25 h-25 object-cover hover:scale-105 transition-transform"></img>
+                            <img src="slug2.png" className="mt-5 mb-5 w-20 h-13 object-cover hover:scale-105 transition-transform"></img>
                             <p className="mb-5 text-gray-500 dark:text-neutral-300">
-                                <b>Technologies:</b><em> React Native, TypeScript, Android Studio</em>
+                                <b>Technologies:</b><em> Phaser 3, TypeScript, Vite</em>
                             </p>
 
                             <p className="mt-2 text-gray-500 dark:text-neutral-300">
-                                <em>In Progress</em>
+                                Web game set in the year 2099. Collect slugs and avoid rocks while avoiding the giant mutant slug. Optimized for mobile & desktop.
                             </p>
+
+                            <a className="mt-10 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-white decoration-2 hover:scale-105 logo-2" target="_blank" href="https://www.github.com/0x008080/Slug-Crossing">
+                                Github Repository
+                                <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </a>
+
+                            <a className="mt-10 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-white decoration-2 hover:scale-105 logo-2" target="_blank" href="https://0x008080.github.io/Slug-Crossing">
+                                Try Out
+                                <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </a>
 
                         </div>
                     </div>
@@ -107,11 +121,11 @@ export function Projects() {
                             </h3>
                             <img src="poke-ball.png" className="mt-5 mb-5 w-25 h-25 object-cover hover:scale-105 transition-transform"></img>
                             <p className="mb-5 text-gray-500 dark:text-neutral-300">
-                                <b>Technologies:</b><em> React, TypeScript, Vite, PokémonTCG API, Tailwind CSS</em>
+                                <b>Technologies:</b><em> Python, Kivy, PokéAPI</em>
                             </p>
 
                             <p className="mt-2 text-gray-500 dark:text-neutral-300">
-                                Desktop application that takes user input and returns the in-game location of any Pokémon.
+                                Desktop application that takes user input and returns the in-game location of any Pokémon
                             </p>
                             <a className="mt-10 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-white decoration-2 hover:scale-105 logo-2" target="_blank" href="https://github.com/daskrys/Poke-Location">
                                 Github Repository
@@ -123,6 +137,24 @@ export function Projects() {
                     </div>
 
                     {/* Proj 6*/}
+                    <div className="flex lg:flex-col rounded-xl  dark:border-gray-100 mr-10 ml-10 ">
+                        <div>
+                            <h3 className="text-lg font-bold text-gray-300 text-center">
+                                TCG Vision
+                            </h3>
+                            <img src="tcg.png" className="mt-5 mb-5 w-25 h-25 object-cover hover:scale-105 transition-transform"></img>
+                            <p className="mb-5 text-gray-500 dark:text-neutral-300">
+                                <b>Technologies:</b><em> React Native, TypeScript, Android Studio, Python</em>
+                            </p>
+
+                            <p className="mt-2 text-gray-500 dark:text-neutral-300">
+                                <em>In Progress</em>
+                            </p>
+
+                        </div>
+                    </div>
+
+                    {/* Proj Archives*/}
                     <div className="flex lg:flex-col rounded-xl  dark:border-gray-100 mr-10 ml-10 ">
                         <div>
                             <h3 className="text-lg font-bold text-gray-300 text-center">
