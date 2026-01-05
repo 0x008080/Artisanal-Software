@@ -50,6 +50,7 @@ export function About() {
                     </div>
 
                     <Skills></Skills>
+                    <div></div>
                 </div>
 
             </section>

@@ -1,11 +1,11 @@
 import '../Skills.css';
 
 export function Skills() {
-    const section: string = "Tech Stack";
+    const section: string = "";
 
     return (
         <>
-            <section id="Skills" className="font-serif flex w-full justify-end">
+            <section id="Skills" className="font-serif flex w-full justify-end mb-10">
                 <div className="md:max-w-screen-md lg:max-w-screen-lg justify-end">
                     <span className="hidden lg:block p-10 rounded-lg shadow-xl/20 shadow-cyan-700/80 dark:border-gray-100">
                         
